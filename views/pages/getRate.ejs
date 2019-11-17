@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Postal Calculator</title>
+    </head>
+
+<body>
+    <h2>Postal Calculator</h2>
+    <form action="/getRate" method="get">
+        <label>Weight of the item:</label>
+        <input type="number" step="0.01" name="weight"><br>      
+        <label> Quantity:</label>
+        <input type="number" name="quantity"><br>
+        <label> Type of Mail:</label>
+
+        <select name="mail">
+            <option value="Letters Stamped">Letters Stamped</option>
+            <option value="Letters Metered">Letters Metered</option>
+            <option value="Large Envelopes Flats">Large Envelopes Flats</option>
+            <option value="First Class Package Service">First-Class Package Service — Retail</option>
+        </select>  <br>     
+            <input type="submit" value="Get Rate">        
+    </form>
+</body>
+</html>
